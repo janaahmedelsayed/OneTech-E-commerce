@@ -1,0 +1,140 @@
+:root{
+    --main-color: #0099cc;
+    --text-color: #212529;
+    --sec-color: #bbb;
+}
+body{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* start bottom nav bar */
+nav{
+    background-color: var(--main-color);
+}
+nav .container{
+    display: flex;
+    flex-wrap: inherit;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.dropdown{
+    position: relative;
+}
+.cat-picker {
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;}
+    .fa-bars:before{
+        content: "\f0c9";
+    }
+    .cat-picker:hover{
+        color: var(--sec-color);
+    }
+ nav a{
+    text-decoration: none;
+ }
+    li{
+        display: list-item;
+    }
+    .nav-item{
+        font-weight: 500;
+    }
+    .nav-item .activee{
+        color: var(--sec-color);
+
+    }
+    .nav-link{
+        color: #fff;
+    }
+    .nav-link:hover{
+        color: var(--sec-color);
+    }
+/* end bottom nav bar */
+/* start main section */
+.cart-list{
+    font-size: 25px;
+    font-weight: 500;
+}
+.cart-item{
+    color: gray;
+    font-size: 20px;
+    font-weight: 700;
+}
+.nocart{
+    width: 80%;
+    max-width: 600px;
+    margin: 36px auto;}
+img{
+    width: 100%;
+    display: block;
+}
+/* end main section */
+
+/* start footer section */
+.letter{
+    box-shadow: 0px 8px 18px 2px var(--sec-color);
+}
+.send i{
+    color: var(--main-color);
+    font-size: 50px;
+}
+footer .form-control{
+    padding: 7px 0;
+}
+.footer-links h2{
+    font-size: 2rem;
+}
+.footer-links a{
+    color: var(--main-color);
+    display: block;
+    text-decoration: none;
+}
+.footer-links .link{
+gap: 10px;
+display: flex;
+}
+.footer-links .foot-icon{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    margin: 16px 0;
+    border-radius: 50%;
+    transition: all 0.25s;
+    color: white;
+}
+.footer-links .foot-icon:hover{
+    cursor: pointer;
+    background-color: var(--sec-color);
+}
+.foot-icon i{
+    font-size: 20px;
+}
+.find-links h6{
+    font-size: 1.5rem;
+}
+.find-links ul{
+    list-style-type: none;
+}
+.find-links a{
+    text-decoration: none;
+color: #212529c1;}
+.find-links a:hover{
+    cursor: pointer;
+    color: var(--sec-color);
+}
+.copyright p{
+font-size: 0.9rem;
+color: #212529c1;
+}
+.copyright span{
+    color: #0099cc;
+}
+/* end footer section */

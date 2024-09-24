@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <title>cart bag</title>
+</head>
+<body>
+        <!--  start bottom nav bar -->    
+        <nav class="navbar nav-sticky position-sticky top-0 w-100 navbar-expand-lg z-3" id="nav">
+            <div class="container">
+                    <a href="#" class=" cat-picker" >
+                        OneTech
+                    </a>
+                 
+                <button class="navbar-toggler lh-base text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            Menu &nbsp;
+            <i class="fa-solid fa-xl fa-bars text-white"></i>
+
+            </button>
+            <div class="navbar-collapse m-auto collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link activee" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">SuperDeals</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">New Arrival</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Trends</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
+                        <li><a class="dropdown-item" href="cart.html">Cart bag</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li>
+                  </ul>
+            </div>
+            </div>
+        </nav>            
+      <!--  end bottom nav bar -->  
+        <!-- start cart section -->
+         <main>
+            <section class="py-5" id="cart">
+                <div class="container">
+                    <h3 class="border-1 border-bottom pb-3 mb-5 cart-list">Cart List</h3>
+                    <div class="row justify-content-between pb-4 border-1 border-bottom">
+                        <div class="col-4 cart-item">Items Details</div>
+                        <div class="col-2 cart-item">Price</div>
+                        <div class="col-3 cart-item">Count</div>
+                        <div class="col-2 cart-item">Total Price</div>
+                    </div>
+                    <ul class="p-0 cartlist"></ul>
+
+                  
+                    <div class="text-end">
+                      <button
+                        type="button"
+                        class="btn btn-outline-success payBtn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                      >
+                        Pay Now
+                      </button>
+                    </div>
+                </div>
+            </section>
+            <div class="nocart d-none">
+                <img src="./imgs/empty-cart.svg" alt="empty-cart">
+            </div>
+         </main>
+
+        <!-- end cart section -->
+                     <!-- start footer -->
+                     <footer id="footer" class="mt-4 pt-5">
+                        <div class="container letter py-4">
+                        <div class="row  justify-content-between align-items-start p-4 g-4">
+                            <div class="letter-content d-flex align-items-center justify-content-center gap-4 col-12 col-lg-4">
+                                <div class="send">
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                </div>
+                                <div class="letter-text">
+                                    <h5>Sign up for Newsletter</h5>
+                                    <p>...and receive %20 coupon for first shopping.</p>
+                                </div>
+    
+    
+                            </div>
+                            <form class="d-flex form-search flex-column align-items-center flex-sm-row col-12 col-lg-7 gap-3 gap-sm-0" role="search">
+                                <input class="form-control border-2 rounded-2 border" type="search" placeholder=" Enter your Email" aria-label="Search">
+                                <button class="btn btn-search d-inline-block rounded-2 w-25 py-2" type="submit">Subscribe</button>
+    
+                                </form>
+                         </div>
+                        </div>
+                        <div class="container footer-links py-5">
+                            <div class="row g-4">
+                                <div class="footer-logo d-flex flex-column gap-3 col-12 col-lg-4">
+                                    <h2>OneTech</h2>
+                                    <p>Got Question? Call Us 24/7</p>
+                                    <a href="tel:=201061107459" >+20 1061107459</a>
+                                    <a href="mailto:janaahmed15@gmail.com" >janaahmed15@gmail.com</a>
+                                    <p>17 Princess Road, London Grester London NW18JR, UK</p>
+                                    <div class="link">
+                                        <a class="foot-icon">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                        <a class="foot-icon">
+                                            <i class="fa-brands fa-twitter"></i>                                    </a>
+                                        <a class="foot-icon">
+                                            <i class="fa-brands fa-youtube"></i>                                    </a>
+                                        <a class="foot-icon">
+                                            <i class="fa-solid fa-envelope"></i>                                    </a>
+                                    </div>
+                                </div>
+                                <div class="find-links col-12 col-lg-4">
+                                    <h6 class="mb-4">
+                                        Find it fast
+                                    </h6>
+                                    <ul class="p-0 flex-column gap-2 d-flex">
+                                        <li><a href="#">computers&laptops</a></li>
+                                        <li><a href="#">computers&laptops</a></li>
+                                        <li><a href="#">computers&laptops</a></li>
+                                        <li><a href="#">computers&laptops</a></li>
+                                        <li><a href="#">computers&laptops</a></li>
+                                        <li><a href="#">computers&laptops</a></li>
+                                        <li><a href="#">computers&laptops</a></li>
+                                        <li><a href="#">computers&laptops</a></li>
+                                    </ul>
+    
+                                </div>
+                                <div class="find-links col-12 col-lg-4">
+                                    <h6 class="mb-4">
+                                        customer care
+                                    </h6>
+                                    <ul class="p-0 flex-column gap-2 d-flex">
+                                        <li><a href="#">My Account</a></li>
+                                        <li><a href="#">My Account</a></li>
+                                        <li><a href="#">My Account</a></li>
+                                        <li><a href="#">My Account</a></li>
+                                        <li><a href="#">My Account</a></li>
+                                        <li><a href="#">My Account</a></li>
+                                        <li><a href="#">My Account</a></li>
+                                        <li><a href="#">My Account</a></li>
+                                    </ul>
+    
+                                </div>
+                            </div>
+    
+    
+                        </div>
+                        <div class="copyright container py-4 d-flex justify-content-between align-items-center
+                        flex-column flex-md-row">
+                        <p>Copyright ©2021 All rights reserved | This template is made by
+                            <span>Triple-O</span>
+                        </p>
+                        <div class="foot-imgs gap-3 me-md-5 d-flex align-items-center">
+                            <a href="#">
+                                <img src="./imgs/footer/footer1.webp">
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/footer/footer2.webp">
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/footer/footer3.webp">
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/footer/footer4.webp">
+                            </a>
+                        </div>
+                    </div>
+                      </footer>
+                     <!-- end footer -->
+                   
+                    <!-- Confirm Pay -->
+                    <aside>
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="staticBackdrop"
+                        data-bs-backdrop="static"
+                        data-bs-keyboard="false"
+                        tabindex="-1"
+                        aria-labelledby="staticBackdropLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title total-price fs-5"
+                                id="staticBackdropLabel"
+                              ></h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">Are you sure u want to Pay ?</div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Not Now
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-primary acceptPay"
+                                data-bs-dismiss="modal"
+                              >
+                                Yes
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </aside>
+    
+                    
+                    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+                    <scriptript src="js/main.js"></script>
+                    <script src="js/cart.js"></script>
+</body>
+</html>
